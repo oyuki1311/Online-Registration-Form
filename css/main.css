@@ -41,7 +41,7 @@ form {
   margin: 10px auto;
   padding: 15px 5px;
   border-radius: 8px;
-  text-shadow: 0 0 15px #2c4454;
+  text-shadow: 0 0 15px #bccfdc;
 }
 
 fieldset {
@@ -90,7 +90,7 @@ select {
   width: 100%;
   background-color: #dee7ed;
   color: #8a97a0;
-  box-shadow: 0 0 5px #446a88;
+  box-shadow: 0 0 15px #446a88;
 }
 
 textarea {
@@ -197,6 +197,7 @@ button {
   margin-top: -15px;
   margin-bottom: 10px;
   border: none;
+  box-shadow: 0 0 15px #446a88;
 }
 
 button:hover {
