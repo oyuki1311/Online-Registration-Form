@@ -1,0 +1,318 @@
+
+/*---------Main CSS Styles---------*/
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  z-index: 1;
+  font-family: 'Droid Serif', serif;
+  color: #000;
+}
+
+header {
+  height: 68px;
+  background: #2d3945;
+  color: #fff;
+  padding: 22px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 1.2em;
+  color: rgb(44,56,68);
+}
+
+form {
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 15px 5px;
+  border-radius: 8px;
+  text-shadow: 0 0 15px #2c4454;
+}
+
+fieldset {
+  margin-bottom: 15px;
+  padding: 0.35em 0 1.5em;
+  border: none;
+}
+
+legend {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+  padding-top: 25px;
+  color: rgb(44,56,68);
+}
+
+label {
+  display: block;
+  font-size: 1em;
+  /*font-weight: lighter;*/
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #003366;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  border: none;
+  border-radius: 5px;
+  /*font-size: 1.2em;*/
+  /*font-weight: lighter;*/
+  height: 50px;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #dee7ed;
+  color: #8a97a0;
+  box-shadow: 0 0 5px #446a88;
+}
+
+textarea {
+  height: 90px;
+}
+
+select {
+  font-size: 15px;
+}
+
+input#zip {
+  width: 140px;
+}
+
+input:focus, textarea:focus, select:focus {
+  color: #FFF;
+  background-color: #abc3d3;
+  -webkit-transition: background-color 1s linear .05s;
+    -moz-transition: background-color 1s linear .05s;
+    -o-transition: background-color 1s linear .05s;
+    transition: background-color 1s linear .05s;
+  border: 2px solid #446a88;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 10px 15px 0;
+}
+
+input[type=checkbox]:not(old),
+input[type=radio   ]:not(old) {
+  width     : 2em;
+  margin    : 0;
+  padding   : 0;
+  font-size : 1em;
+  opacity   : 0;
+}
+
+input[type=checkbox]:not(old) + label,
+input[type=radio   ]:not(old) + label {
+  display      : inline-block;
+  margin-left  : -2em;
+  line-height  : 1.75em;
+}
+
+input[type=checkbox]:not(old) + label > span {
+  display          : inline-block;
+  width            : 18px;
+  height           : 18px;
+  margin           : 0.25em 0.5em 0.25em 0em;
+  border-radius    : 5px;
+  background       : #dee7ed;
+  vertical-align   : bottom;
+}
+
+input[type=radio   ]:not(old) + label > span {
+  display          : inline-block;
+  width            : 18px;
+  height           : 18px;
+  margin           : 0.25em 0.5em 0.25em 0em;
+  border-radius    : 25px;
+  background       : #dee7ed;
+  vertical-align   : bottom;
+}
+
+input[type=checkbox]:not(old):checked + label > span:before {
+  content     : '✓';
+  display     : block;
+  width       : 18px;
+  height      : 18px;
+  color       : #446a88;
+  line-height : 16px;
+  text-align  : center;
+  border      : 2px solid #446a88;
+  border-radius    : 5px;
+  /*font-weight : bold;*/
+}
+
+input[type=radio]:not(old):checked + label > span:before {
+  content          : '•';
+  display          : block;
+  width            : 18px;
+  height           : 18px;
+  color            : #446a88;
+  font-size        : 1.5em;
+  line-height      : 16px;
+  text-align       : center;
+  border           : 2px solid #446a88;
+  border-radius    : 25px;
+}
+
+button {
+  color: #f2f2f2;
+    background: -webkit-linear-gradient(#4b77b4, #edf1f7);
+    background: -o-linear-gradient(#4b77b4, #edf1f7);
+    background: -moz-linear-gradient(#4b77b4, #edf1f7);
+    background: linear-gradient(#2d3945, #3c4d5d);
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  height: 60px;
+  margin-top: -15px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+button:hover {
+  opacity: 0.86;
+}
+
+footer {
+  text-align: center;
+  font-size: .86em;
+  font-weight: lighter;
+  margin-top: 10px;
+  padding-bottom: 200px;
+  color: #003366;
+}
+
+::-webkit-input-placeholder {
+ font-size: .7em;
+ font-style: italic;
+ color: #a6a6a6;
+ text-align: right;
+ padding-right: .5em;
+}
+
+:-moz-placeholder {
+  font-size: .7em;
+  font-style: italic;
+  color: #a6a6a6;
+  text-align: right;
+  padding-right: .5em;
+}
+
+::-moz-placeholder {
+  font-size: .7em;
+  font-style: italic;
+  color: #a6a6a6;
+  text-align: right;
+  padding-right: .5em;
+}
+
+:-ms-input-placeholder {
+ font-size: .7em;
+ font-style: italic;
+ color: #a6a6a6;
+ text-align: right;
+ padding-right: .5em;
+}
+
+/*-----------Classes-----------*/
+
+.background {
+  position: fixed;
+  background-color: #fff;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.title-paragraph {
+  text-align: center;
+  font-size: 1em;
+  /*font-weight: lighter;*/
+  margin-top: 10px;
+  padding-bottom: 40px;
+  color: #003366;
+  border-bottom: 4px solid rgb(44,56,68);
+}
+
+.borders {
+  border-top: 2px solid rgb(44,56,68);
+  margin-top: -11px;
+}
+
+label.light {
+  font-weight: 300;
+  margin: 5px;
+  display: inline;
+}
+
+/*-----------Media Queries-----------*/
+
+@media screen and (min-width: 480px) {
+
+  form {
+    max-width: 480px;
+  }
+
+}
+
+@media screen and (min-width: 760px) {
+
+  form {
+    max-width: 760px;
+  }
+
+  .label-desktop {
+    display: inline-block;
+    width: 24%;
+  }
+
+  legend {
+    margin-top: 45px;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="time"],
+  input[type="url"],
+  select {
+    display: inline-block;
+    width: 75%;
+    margin: 10px auto;
+  }
+
+}
