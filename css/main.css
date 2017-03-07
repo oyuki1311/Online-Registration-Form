@@ -36,6 +36,11 @@ h2 {
   color: rgb(44,56,68);
 }
 
+h3 {
+  font-size: 1em;
+  color: #003366;
+}
+
 form {
   max-width: 300px;
   margin: 10px auto;
